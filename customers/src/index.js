@@ -12,10 +12,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express = require("express");
 const mongoose = require("mongoose");
 const env = require("dotenv");
-const customers_1 = require("./models/customers");
 const username = encodeURIComponent("fortunate");
 const password = encodeURIComponent("F0rtun@te0m0nuw@");
 const cors = require("cors");
+const customers_1 = require("./models/customers");
 mongoose.set("strictQuery", false);
 if (process.env.NODE_ENV !== "production") {
     env.config();
