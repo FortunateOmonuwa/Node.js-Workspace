@@ -1,0 +1,29 @@
+GET http://localhost:4001 
+
+###
+
+POST http://localhost:4001/api/users
+Content-Type: application/json
+
+{
+"firstname":"Sunday",
+"lastname":"Omonuwa",
+"username":"Sunny", 
+"phonenumber": "08037165963", 
+"age": 55,
+"email":"sundayoomonuwa@gmail.com",
+"password":"Sunnythebest@"
+
+}
+
+###
+
+POST http://localhost:4001/api/users/login
+Content-Type: application/json
+
+{
+
+"username":"Sunny", 
+"password":"Sunnythebest"
+
+}
